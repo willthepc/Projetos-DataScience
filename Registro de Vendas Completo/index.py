@@ -1,5 +1,4 @@
 import os
-
 import pandas as pd
 
 os.system('cls')
@@ -21,6 +20,7 @@ def salvarCSV(vendas, nome_arquivo="vendas.csv"):
             writer.writeheader()
 
         writer.writerow(vendas)
+
 
 def cadastrarVenda():
     idVenda = random.randint(1,999999)
@@ -123,21 +123,27 @@ def funcaoPrincipal():
         if x == 0:
             print('Saindo do programa...')
             break
-        if x == 1:
+        elif x == 1:
             cadastrarVenda()
-        if x == 2:
+        elif x == 2:
             listarVendas()
-        if x == 3:
+        elif x == 3:
             buscarVendaVendedor()
-        if x == 4:
+        elif x == 4:
             buscarVendaProduto()
-        if x == 5:
+        elif x == 5:
             estatistica()
-        if x == 6:
+        elif x == 6:
             grafico()
-        if x == 7:
+        elif x == 7:
             relatorio()
-        if x == 999:
+        elif x == 999:
             reset()
+        else:
+            print('Opção indisponível.')
 
 funcaoPrincipal()
+
+
+
+
