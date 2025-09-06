@@ -39,7 +39,7 @@
 
 <h2>🛠️ Tecnologias Utilizadas</h2>
 <ul>
-<li><strong>Python 3</strong></li>
+<li><strong>Python</strong></li>
 
 <li><strong>Pandas</strong> (manipulação e análise de dados)</li>
 
